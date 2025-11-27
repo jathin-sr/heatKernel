@@ -1,0 +1,3 @@
+Optimal thread configuration: 5 threads
+Source: threads_5
+Performance: 319,438 steps/sec

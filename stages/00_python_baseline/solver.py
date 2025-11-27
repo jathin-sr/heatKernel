@@ -54,8 +54,6 @@ parser.add_argument('--alpha', type=float, default=0.2)
 parser.add_argument('--dx', type=float, default=0.01)
 parser.add_argument('--output-dir', default='.')
 args = parser.parse_args()
-
-print(f"Running 00_python_baseline with grid= {args.size}, steps={args.timesteps}")
 results = heat_equation_solver(args.size, args.timesteps, args.alpha, args.dx)
 
 # Metrics

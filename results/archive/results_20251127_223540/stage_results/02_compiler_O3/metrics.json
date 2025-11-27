@@ -1,0 +1,14 @@
+{
+  "stage": "01_c_baseline",
+  "grid_size": 200,
+  "time_steps": 20000,
+  "total_time": 2.717330,
+  "time_per_step": 0.135867,
+  "performance": 7360.166045,
+  "breakdown": {
+    "stencil_time": 2.698562,
+    "boundary_time": 0.017048,
+    "swap_time": 0.000400,
+    "other_time": 0.001320
+  }
+}

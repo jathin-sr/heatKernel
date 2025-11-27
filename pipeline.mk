@@ -1,5 +1,6 @@
-# Pipeline stage definitions      00_python_baseline \ 
+# Pipeline stage definitions  
 PIPELINE_STAGES := \
+    00_python_baseline \
     01_c_baseline \
     02_compiler_O3 \
     03_loop \

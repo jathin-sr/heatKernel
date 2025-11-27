@@ -1,0 +1,14 @@
+{
+  "stage": "python_baseline",
+  "grid_size": 500,
+  "time_steps": 20000,
+  "total_time": 2630.50918507576,
+  "time_per_step": 131.525459253788,
+  "performance": 7.6030907299128065,
+  "breakdown": {
+    "stencil_time": 2627.9805290699005,
+    "boundary_time": 0.04718947410583496,
+    "swap_time": 0.26128458976745605,
+    "other_time": 2.220181941986084
+  }
+}
