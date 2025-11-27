@@ -1,0 +1,3 @@
+Optimal thread configuration: 4 threads
+Source: threads_4
+Performance: 1,077,993 steps/sec
