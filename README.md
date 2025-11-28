@@ -90,7 +90,7 @@ Python dependencies are listed in `requirements.txt`.
 
 ## Performance Results
 
-### Summary Table
+### Summary Table for grid size = 500
 | Stage | Time (s) | Time/Step (ms) | Performance (steps/s) |
 |-------|----------|----------------|----------------------|
 | 00_python_baseline | 2630.50918507576 | 131.525459253788 | 7.6030907299 |
@@ -104,15 +104,19 @@ Python dependencies are listed in `requirements.txt`.
 | 08_openmp_parallel | 0.238776 | 0.011939 | 83760.511944 |
 | 09_arch_specific | 0.239977 | 0.011999 | 83341.320210 | 
 
+For detailed performance results for grid size 100, see the [pipeline summary](results/archive/results_20251125_225537/pipeline_summary.md).
+
+For detailed performance results for grid size 200, see the [pipeline summary](results/archive/results_20251127_223540/pipeline_summary.md).
+
 ### Scaling 
 Plot for grid size 100:  
-![heatKernel](results/archive/results_20251125_225537/performance-plots/complete_optimization_journey.png) 
+![heatKernel](results/archive/results_20251125_225537/performance_plots/complete_optimization_journey.png) 
 
 Plot for grid size 200:  
-![heatKernel](results/archive/results_20251127_223540/performance-plots/complete_optimization_journey.png) 
+![heatKernel](results/archive/results_20251127_223540/performance_plots/complete_optimization_journey.png) 
 
 Plot for grid size 500:  
-![heatKernel](results/archive/results_20251127_222556/performance-plots/complete_optimization_journey.png) 
+![heatKernel](results/archive/results_20251127_222556/performance_plots/complete_optimization_journey.png) 
 
 ### 7.3 Key Observations
 - Expected large Python to C baseline acceleration.  
@@ -137,7 +141,7 @@ Plot for grid size 500:
 
 ## Authors
 
-- [@jathin](https://www.github.com/jathin-sr) 
+- [@jathin-sr](https://www.github.com/jathin-sr) 
 
 ## License
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
