@@ -1,4 +1,6 @@
-# heatKernel: Performance Engineering of a Finite Difference Stencil Kernel
+# heatKernel
+
+Performance Engineering of a Finite Difference Stencil Kernel
 
 ![heatKernel](results/archive/results_20251127_222556/performance_plots/complete_optimization_journey.png)
 
@@ -15,12 +17,12 @@ This project benchmarks and optimizes a **2D heat equation finite-difference ste
 
 **Governing PDE:**
 ```
-∂u/∂t = α (∂²u/∂x² + ∂²u/∂y²)
+∂T/∂t = α (∂²T/∂x² + ∂²T/∂y²)
 ```
 
 **Discretization (5-point stencil):**
 ```
-u(i,j)^{n+1} = u(i,j)^n + αΔt * ((u(i+1,j) + u(i-1,j) + u(i,j+1) + u(i,j-1) − 4*u(i,j)) / Δx²)
+T(i,j)^{n+1} = T(i,j)^n + αΔt * ((T(i+1,j) + T(i-1,j) + T(i,j+1) + T(i,j-1) − 4*T(i,j)) / Δx²)
 ```
 
 **Stability Criterion:**
@@ -116,12 +118,6 @@ Plot for grid size 200:
 
 Plot for grid size 500:  
 ![heatKernel](results/archive/results_20251127_222556/performance_plots/complete_optimization_journey.png) 
-
-### 7.3 Key Observations
-- Expected large Python to C baseline acceleration.  
-- Memory layout changes improved bandwidth significantly.  
-- Blocking + SIMD produced multiplicative improvements.  
-- OpenMP scaling approached near-ideal in placeholder tests.
 
 ## Hardware Details
 - CPU: M4 ARMv9.2-A with 3nm proces tech
